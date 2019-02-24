@@ -55,11 +55,6 @@ app.post('/login', (req, res) => {
          res.json({error: 'User with that username does not exist'});
      }
 });
-
-//Logsout - don't realyl need it
-app.post('/logout', (req, res) => {
-    res.sendStatus(200);
-});
  
 //Checks for token on front-end
 app.post('/check-login', checkForToken, (req, res) => {
