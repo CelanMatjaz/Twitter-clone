@@ -1,0 +1,23 @@
+{
+  "name": "twitter-clone",
+  "version": "1.0.0",
+  "description": "A simple Twitter clone",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "dev2": "concurrently \"node app.js\" \"npm run client\""
+  },
+  "author": "Matjaž Čean",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "express-busboy": "^7.0.1",
+    "jsonwebtoken": "^8.5.0",
+    "universal-config": "^0.3.0"
+  }
+}
